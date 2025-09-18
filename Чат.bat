@@ -69,7 +69,7 @@ if not exist log (
 cd log
 start Read.bat
 
-echo [90m[SYSTEM]][0m [%time%] !user! присоединяется к чату!] >> Чат-%date%.txt
+echo [SYSTEM][%time%] !user! присоединяется к чату! >> Чат-%date%.txt
 
 :start
 cls
@@ -85,4 +85,5 @@ if "!message!"=="" (
     echo Отправлено!
     timeout /t 1 /nobreak >nul
     goto start
+
 )
